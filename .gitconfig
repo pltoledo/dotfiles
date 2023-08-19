@@ -82,11 +82,6 @@
     sort = -committerdate
 
 [core]
-
-    # Use custom `.gitignore` and `.gitattributes`.
-    excludesfile = ~/.gitignore
-    attributesfile = ~/.gitattributes
-
     # Treat spaces before tabs and all kinds of trailing whitespace as an error.
     # [default] blank-at-eol: spaces at the end of line
      # [default] blank-at-eof:spaces at the end of file
@@ -111,25 +106,6 @@
     # Use colors in Git commands that are capable of colored output when
     # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
     ui = auto
-
-[color "branch"]
-
-    current = yellow reverse
-    local = yellow
-    remote = green
-
-[color "diff"]
-
-    meta = yellow bold
-    frag = magenta bold # line info
-    old = red # deletions
-    new = green # additions
-
-[color "status"]
-
-    added = yellow
-    changed = green
-    untracked = cyan
 
 [commit]
 
