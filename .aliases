@@ -61,10 +61,15 @@ alias cpu5='ps auxf | sort -nr -k 3 | head 5'
 alias cpu10='ps auxf | sort -nr - k 3 | head 10'
 
 # Prints the last command run
-alias lcom="history | tail -n 2 | head -n 1 | cut -d ' ' -f 4-"
+alias lcom="fc -l -1 | cut -d' ' -f2-"
 
 # returns the weather
 alias weather='curl wttr.in'
 
 # reload bash
 alias reload="source ~/.bashrc"
+
+alias now='date +"%d-%m-%Y %T"'
+
+# rerun last arg as sudo
+alias please="sudo !!"
